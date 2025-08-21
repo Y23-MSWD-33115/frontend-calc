@@ -9,7 +9,7 @@ function App() {
   const addNumbers = async () => {
     try {
       // The fetch URL points to your Spring Boot application on port 8082
-      const response = await fetch(`http://localhost:8082/add/${numA}/${numB}`);
+      const response = await fetch(`http://localhost:8081/add/${numA}/${numB}`);
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
